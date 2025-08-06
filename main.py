@@ -55,23 +55,18 @@ def hapus_data():
     print("Data buku tidak ditemukan!")
 
 def tampilkan_peminjaman():
-    print("}{")
     print("Menu Data Peminjaman Buku Perpustakaan ")
     print(tabulate(records, headers="keys", tablefmt="grid"))
-    print("}{")
+    
 
 
 def tampilkan_belum():
-    print("}{")
     print("Menu Data Peminjaman Buku Perpustakaan Kizu")
     print(tabulate([records for records in records if records['tanggal_kembali'] is None],  headers="keys", tablefmt="grid"))
-    print("}{")
 
 
 def peminjaman():
-    print("}{")
     print("Menu Meminjam Buku Perpustakaan ")
-    print("}{")
     isbn = input("Masukkan ISBN buku yang dipinjam: ")
     tanggal_pinjam = input("Masukkan tanggal pinjam (YYYY-MM-DD): ")
 
@@ -95,9 +90,7 @@ def peminjaman():
 
 
 def pengembalian():
-    print("}{")
     print("Menu Meminjam Buku Perpustakaan")
-    print("}{")
     isbn = input("Masukkan ISBN buku yang dipinjam: ")
     tanggal_pinjam = input("Masukkan tanggal pinjam (Y-M-D): ")
 
