@@ -61,7 +61,7 @@ def tampilkan_peminjaman():
 
 
 def tampilkan_belum():
-    print("Menu Data Peminjaman Buku Perpustakaan Kizu")
+    print("Menu Data Peminjaman Buku Perpustakaan ")
     print(tabulate([records for records in records if records['tanggal_kembali'] is None],  headers="keys", tablefmt="grid"))
 
 
